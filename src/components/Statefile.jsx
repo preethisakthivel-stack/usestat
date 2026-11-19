@@ -70,9 +70,9 @@ export default function Statefile() {
 <div className=' mt-[30px] ml-[40px]'>
     <h1 className='text-[30px] text-purple-700 font-bold'>{brand}</h1>
     <p className='mt-[8px] text-[20px] '>{brand} was originally Luanched in the year {year}. </p>
-    <p  className='mt-[8px] text-[20px] '> The famous model of {brand} is F1. </p>
+    <p  className='mt-[8px] text-[20px] '> The famous model of {setBrand} is F1. </p>
     <p onClick={()=>setModel('Models')} className='mt-[8px] text-[20px] cursor-pointer'>{brand} 
-        <u className=' font-bold text-blue-600'> Models</u>
+        <u className=' font-bold text-blue-600'> Models</u>{setYear}
         </p>
 
     <div className='text-[22px] italic  text-green-800  mt-6'>
