@@ -69,10 +69,10 @@ export default function Statefile() {
 
 <div className=' mt-[30px] ml-[40px]'>
     <h1 className='text-[30px] text-purple-700 font-bold'>{brand}</h1>
-    <p className='mt-[8px] text-[20px] '>{brand} was originally Luanched in the year {year}. </p>
-    <p  className='mt-[8px] text-[20px] '> The famous model of {setBrand} is F1. </p>
+    <p className='mt-[8px] text-[20px] '>{brand} was originally Luanched in the year{setYear} {year}. </p>
+    <p  className='mt-[8px] text-[20px] '> The famous model of {setBrand}{brand} is F1. </p>
     <p onClick={()=>setModel('Models')} className='mt-[8px] text-[20px] cursor-pointer'>{brand} 
-        <u className=' font-bold text-blue-600'> Models</u>{setYear}
+        <u className=' font-bold text-blue-600'> Models</u>
         </p>
 
     <div className='text-[22px] italic  text-green-800  mt-6'>
@@ -129,7 +129,8 @@ export default function Statefile() {
 <div className=' mt-[50px] ml-[30px]'>
     <button onClick={()=>setObj(prev=>(
         {
-            ...prev,['course']:'Full stack'
+            ...prev,
+            // ['course']:'Full stack'
         }
     ))}  className=' border-[1px] w-[150px] text-[20px] bg-lime-800'>
          Click to show</button>
